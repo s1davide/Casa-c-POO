@@ -1,0 +1,112 @@
+# depslib dependency file v1.0
+1605126121 source:d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\tiempo.cpp
+	"tiempo.h"
+	"menu.h"
+	<iostream>
+	<unistd.h>
+	<windows.h>
+	<conio.h>
+	<stdio.h>
+	"keys.h"
+
+1605126050 d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\tiempo.h
+	<ctime>
+	<iostream>
+	"estado.h"
+	"menu.h"
+	<chrono>
+	<thread>
+
+1605069091 d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\estado.h
+	<vector>
+	<iostream>
+	"cuarto.h"
+
+1605060542 d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\cuarto.h
+	<vector>
+	<iostream>
+	<string>
+
+1605124730 d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\menu.h
+	<iostream>
+	<string>
+	<vector>
+	"sala.h"
+	"dormitorio.h"
+	"cocina.h"
+	"bano.h"
+	"patio.h"
+	"estado.h"
+	<windows.h>
+	<conio.h>
+	<stdio.h>
+
+1605060542 d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\sala.h
+	<vector>
+	<iostream>
+	"cuarto.h"
+
+1605060542 d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\dormitorio.h
+	<string>
+	<iostream>
+	"cuarto.h"
+
+1605060542 d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\cocina.h
+	<vector>
+	<iostream>
+	"cuarto.h"
+
+1605060542 d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\bano.h
+	<iostream>
+	"cuarto.h"
+
+1605123688 d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\patio.h
+	<vector>
+	<iostream>
+	<string>
+
+1605125176 d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\keys.h
+	<stdio.h>
+	<sys/ioctl.h>
+	<sys/select.h>
+	<termios.h>
+	<stropts.h>
+
+1605125488 source:d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\menu.cpp
+	"menu.h"
+	"splitstring.h"
+	<vector>
+
+1605060542 d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\splitstring.h
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+
+1605125280 source:d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\main.cpp
+	<iostream>
+	<ctime>
+	"tiempo.h"
+	<fcntl.h>
+
+1605060542 source:d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\bano.cpp
+	"bano.h"
+
+1605060542 source:d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\cocina.cpp
+	"cocina.h"
+
+1605060542 source:d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\cuarto.cpp
+	"cuarto.h"
+
+1605060542 source:d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\dormitorio.cpp
+	"dormitorio.h"
+
+1605068910 source:d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\estado.cpp
+	"estado.h"
+
+1605060542 source:d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\patio.cpp
+	"patio.h"
+
+1605060542 source:d:\software\conceptos desarrollo\parquesoft\t3\programación orientada a objetos\evidencia final\juego casa\sala.cpp
+	"sala.h"
+
