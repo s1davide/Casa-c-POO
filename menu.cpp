@@ -132,15 +132,15 @@ void Menu::salidaMenu(){
       gotoxy(1, 13+i);
       cout<<"                         ";
       gotoxy(1, 13+i);
-      printf("%s - %s",listaMenu[i].c_str(),"[x]\n");
-      //cout<<i+1<<". " <<listaMenu[i]<<" [x]"<<"\n";
+      printf("%d - %s  %s", i+1,listaMenu[i].c_str(),"[x]\n");
+
     }
     else{
       gotoxy(1, 13+i);
       cout<<"                         ";
       gotoxy(1, 13+i);
-      printf("%s - %s",listaMenu[i].c_str(),"[]\n");
-      //cout<<i+1<<". "<<listaMenu[i]<<" []"<<"\n";
+      printf("%d - %s  %s", i+1, listaMenu[i].c_str(),"[]\n");
+
     }
   }
 }
