@@ -11,17 +11,9 @@ Estado::Estado(){
 Estado::~Estado(){
 
 }
-/*void Estado::alimentarse() {
-  hambre-=totalAlimentacion;
-} 
-void Estado::tomarBano() {
-  suciedad-=totalLimpieza;
-} 
-void Estado::descansar() {
-  cansancio-=totalCansancio;
-}*/
+
 void Estado::mejorarEstado(string accionMejora){
-    
+
   if(accionMejora=="comer"){
     if(hambre>0){
       if(hambre-totalAlimentacion<-3){
@@ -31,21 +23,21 @@ void Estado::mejorarEstado(string accionMejora){
       }
     }
   }
-  else if(accionMejora=="ducha"){    
+  else if(accionMejora=="ducha"){
     if(suciedad>0){
     if(suciedad-totalLimpieza<-3){
         suciedad = -3;
-    } 
+    }
     else{
       suciedad-=totalLimpieza;
-    }         
+    }
     }
   }
   else if(accionMejora=="dormir"){
     if(cansancio>0){
       if(cansancio-totalCansancio<-3){
         cansancio = -3;
-      } 
+      }
       else{
         cansancio-=totalCansancio;
       }
@@ -54,22 +46,37 @@ void Estado::mejorarEstado(string accionMejora){
 }
 
 void Estado::aumentaHambre() {
-  hambre+=1;
+  #ifdef _WIN32
+    hambre+=2;
+  #else
+    hambre+=1;
+  #endif
+
 }
 void Estado::aumentaSuciedad() {
-  suciedad+=1;
+  #ifdef _WIN32
+    suciedad+=2;
+  #else
+    suciedad+=1;
+  #endif
+
 }
 void Estado::aumentaCansancio() {
-  cansancio+=1;
+  #ifdef _WIN32
+    cansancio+=2;
+  #else
+    cansancio+=1;
+  #endif
+
 }
 
-int Estado::obtieneTotalAlimentacion(){  
+int Estado::obtieneTotalAlimentacion(){
   return totalAlimentacion;
 };
 int Estado::obtieneTotalLimpieza(){
   return totalLimpieza;
 };
-int Estado::obtieneTotalCansancio(){  
+int Estado::obtieneTotalCansancio(){
   return totalCansancio;
 };
 
@@ -80,7 +87,7 @@ int Estado::obtieneHambreActual(){
   }
   else{
     resultado = hambre;
-  }  
+  }
   return resultado;
 };
 int Estado::obtieneSuciedadActual(){
@@ -90,16 +97,16 @@ int Estado::obtieneSuciedadActual(){
   }
   else{
     resultado = suciedad;
-  }     
+  }
   return resultado;
 };
-int Estado::obtieneCansancioActual(){  
+int Estado::obtieneCansancioActual(){
   int resultado;
   if(cansancio<0){
     resultado = 0;
   }
   else{
     resultado = cansancio;
-  }  
+  }
   return resultado;
 };

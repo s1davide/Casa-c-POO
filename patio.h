@@ -12,9 +12,9 @@ class Patio {
     vector <string> respuesta;
   public:
     Patio();
-    ~Patio();    
+    ~Patio();
     string accion(int);
-    vector<string> getOpciones(); 
-               
+    vector<string> getOpciones();
+
 };
 #endif

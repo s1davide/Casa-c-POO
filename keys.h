@@ -3,6 +3,8 @@
 #include <sys/select.h>
 #include <termios.h>
 #include <stropts.h>
+#define false 0
+#define true 1
 
 int bytesWaiting;
 int STDIN = 0;
@@ -19,8 +21,8 @@ int _kbhit() {
         tcsetattr(STDIN, TCSANOW, &term);
         setbuf(stdin, NULL);
         initialized = true;
-    }    
+    }
     initialized = false;
-    ioctl(STDIN, FIONREAD, &bytesWaiting);    
+    ioctl(STDIN, FIONREAD, &bytesWaiting);
     return bytesWaiting;
 }

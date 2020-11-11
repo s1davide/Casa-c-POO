@@ -5,7 +5,7 @@
 #include "cuarto.h"
 using namespace std;
 class Estado {
-  private:    
+  private:
   int  hambre ;
   int  suciedad;
   int  cansancio;
@@ -15,15 +15,12 @@ class Estado {
   bool espera;
   public:
     Estado();
-    ~Estado();  
-    void mejorarEstado(string);    
-    //void alimentarse();
-    //void tomarBano();
-    //void descansar();    
+    ~Estado();
+    void mejorarEstado(string);
     void mejorarEstado();
-    void aumentaHambre(); 
-    void aumentaSuciedad(); 
-    void aumentaCansancio(); 
+    void aumentaHambre();
+    void aumentaSuciedad();
+    void aumentaCansancio();
     int obtieneTotalAlimentacion();
     int obtieneTotalLimpieza();
     int obtieneTotalCansancio();
